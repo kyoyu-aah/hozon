@@ -5,48 +5,73 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
   <link rel="stylesheet" href="./normal.css">
   <title>ものおきば</title>
+  <style>
+    /* 画像とリストのレイアウト設定 */
+    ul {
+      list-style: none; /* 点を消す */
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 30px; /* 画像ごとの上下の間隔 */
+      display: flex;
+      flex-direction: column; /* 番号と画像を縦に並べる */
+      align-items: flex-start; /* 左寄せ */
+    }
+
+    /* 画像のサイズ調整（ここを変えると一括で変わります） */
+    .thumb {
+      display: block;
+      margin-top: 8px;
+      width: 120px;      /* 横幅（小さめ） */
+      height: auto;      /* 縦横比を維持 */
+      border: 1px solid #ddd;
+      border-radius: 4px; /* 角を少し丸く（お好みで） */
+    }
+  </style>
 </head>
 <body>
-  <h3> </h3>
+  <h3>ものおきば</h3>
   <p>最終更新：2025/5/31 22:45</p>
-<ul>
-  <li><a href="1.jpg">1</a></li>
-  <li><a href="2.jpg">2</a></li>
-  <li><a href="3.jpg">3</a></li>
-  <li><a href="4.jpg">4</a></li>
-  <li><a href="5.jpg">5</a></li>
-  <li><a href="6.jpg">6</a></li>
-  <li><a href="7.jpg">7</a></li>
-  <li><a href="8.jpg">8</a></li>
-  <li><a href="9.jpg">9</a></li>
-  <li><a href="10.jpg">10</a></li>
-  <li><a href="11.jpg">11</a></li>
-  <li><a href="12.jpg">12</a></li>
-  <li><a href="13.jpg">13</a></li>
-  <li><a href="14.jpg">14</a></li>
-  <li><a href="15.jpg">15</a></li>
-  <li><a href="16.jpg">16</a></li>
-  <li><a href="17.jpg">17</a></li>
-  <li><a href="18.jpg">18</a></li>
-  <li><a href="19.jpg">19</a></li>
-  <li><a href="20.jpg">20</a></li>
-  <li><a href="21.jpg">21</a></li>
-  <li><a href="22.jpg">22</a></li>
-  <li><a href="23.jpg">23</a></li>
-  <li><a href="24.jpg">24</a></li>
-  <li><a href="25.jpg">25</a></li>
-  <li><a href="26.jpg">26</a></li>
-  <li><a href="27.jpg">27</a></li>
-  <li><a href="28.jpg">28</a></li>
-  <li><a href="29.jpg">29</a></li>
-  <li><a href="30.jpg">30</a></li>
-  <li><a href="31.jpg">31</a></li>
-  <li><a href="32.jpg">32</a></li>
-  <li><a href="33.jpg">33</a></li>
-  <li><a href="34.jpg">34</a></li>
-  <li><a href="35.jpg">35</a></li>
-  <li><a href="36.jpg">36</a></li>
-</ul>
+  <ul>
+    <li><a href="1.jpg">1</a><img src="1.jpg" class="thumb"></li>
+    <li><a href="2.jpg">2</a><img src="2.jpg" class="thumb"></li>
+    <li><a href="3.jpg">3</a><img src="3.jpg" class="thumb"></li>
+    <li><a href="4.jpg">4</a><img src="4.jpg" class="thumb"></li>
+    <li><a href="5.jpg">5</a><img src="5.jpg" class="thumb"></li>
+    <li><a href="6.jpg">6</a><img src="6.jpg" class="thumb"></li>
+    <li><a href="7.jpg">7</a><img src="7.jpg" class="thumb"></li>
+    <li><a href="8.jpg">8</a><img src="8.jpg" class="thumb"></li>
+    <li><a href="9.jpg">9</a><img src="9.jpg" class="thumb"></li>
+    <li><a href="10.jpg">10</a><img src="10.jpg" class="thumb"></li>
+    <li><a href="11.jpg">11</a><img src="11.jpg" class="thumb"></li>
+    <li><a href="12.jpg">12</a><img src="12.jpg" class="thumb"></li>
+    <li><a href="13.jpg">13</a><img src="13.jpg" class="thumb"></li>
+    <li><a href="14.jpg">14</a><img src="14.jpg" class="thumb"></li>
+    <li><a href="15.jpg">15</a><img src="15.jpg" class="thumb"></li>
+    <li><a href="16.jpg">16</a><img src="16.jpg" class="thumb"></li>
+    <li><a href="17.jpg">17</a><img src="17.jpg" class="thumb"></li>
+    <li><a href="18.jpg">18</a><img src="18.jpg" class="thumb"></li>
+    <li><a href="19.jpg">19</a><img src="19.jpg" class="thumb"></li>
+    <li><a href="20.jpg">20</a><img src="20.jpg" class="thumb"></li>
+    <li><a href="21.jpg">21</a><img src="21.jpg" class="thumb"></li>
+    <li><a href="22.jpg">22</a><img src="22.jpg" class="thumb"></li>
+    <li><a href="23.jpg">23</a><img src="23.jpg" class="thumb"></li>
+    <li><a href="24.jpg">24</a><img src="24.jpg" class="thumb"></li>
+    <li><a href="25.jpg">25</a><img src="25.jpg" class="thumb"></li>
+    <li><a href="26.jpg">26</a><img src="26.jpg" class="thumb"></li>
+    <li><a href="27.jpg">27</a><img src="27.jpg" class="thumb"></li>
+    <li><a href="28.jpg">28</a><img src="28.jpg" class="thumb"></li>
+    <li><a href="29.jpg">29</a><img src="29.jpg" class="thumb"></li>
+    <li><a href="30.jpg">30</a><img src="30.jpg" class="thumb"></li>
+    <li><a href="31.jpg">31</a><img src="31.jpg" class="thumb"></li>
+    <li><a href="32.jpg">32</a><img src="32.jpg" class="thumb"></li>
+    <li><a href="33.jpg">33</a><img src="33.jpg" class="thumb"></li>
+    <li><a href="34.jpg">34</a><img src="34.jpg" class="thumb"></li>
+    <li><a href="35.jpg">35</a><img src="35.jpg" class="thumb"></li>
+    <li><a href="36.jpg">36</a><img src="36.jpg" class="thumb"></li>
+  </ul>
+  <hr>
   <div>
     広告： 使用済み／不要なマンガン乾電池、酸化銀ボタン電池、コイン型リチウム一次電池募集！ショートや電解液の漏出が起きないようにご持参ください。
   </div>
