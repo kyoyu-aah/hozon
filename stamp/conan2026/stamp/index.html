@@ -10,23 +10,38 @@
     ul {
       list-style: none; /* 点を消す */
       padding: 0;
+      display: flex;    /* 横並びにする */
+      flex-wrap: wrap;  /* 端まで来たら折り返す */
+      gap: 20px;       /* 項目間の余白 */
     }
 
     li {
-      margin-bottom: 30px; /* 画像ごとの上下の間隔 */
+      margin-bottom: 15px; 
       display: flex;
-      flex-direction: column; /* 番号と画像を縦に並べる */
-      align-items: flex-start; /* 左寄せ */
+      flex-direction: column; /* 文字と画像を縦に並べる */
+      align-items: center;    /* 中央揃え */
+      width: 130px;           /* 各項目の幅を固定 */
     }
 
-    /* 画像のサイズ調整（ここを変えると一括で変わります） */
+    /* 画像のサイズ調整 */
     .thumb {
       display: block;
       margin-top: 8px;
-      width: 120px;      /* 横幅（小さめ） */
+      width: 100%;       /* 親要素の幅に合わせる */
+      max-width: 120px;  /* 最大幅を指定 */
       height: auto;      /* 縦横比を維持 */
       border: 1px solid #ddd;
-      border-radius: 4px; /* 角を少し丸く（お好みで） */
+      border-radius: 4px; /* 角を少し丸く */
+    }
+
+    /* リンクテキストの調整 */
+    li a {
+      text-align: center;
+      font-size: 14px;
+      text-decoration: none;
+      min-height: 2.5em; /* 高さを揃えて画像の開始位置を統一 */
+      display: flex;
+      align-items: center;
     }
   </style>
 </head>
@@ -34,8 +49,8 @@
   <h3>ものおきば</h3>
   <p>最終更新：2025/5/31 22:45</p>
   <ul>
-    <li><a href="1.jpg">船橋</a><img src="1.jpg" class="thumb"></li>
     <li><a href="2.jpg">千葉</a><img src="2.jpg" class="thumb"></li>
+    <li><a href="1.jpg">船橋</a><img src="1.jpg" class="thumb"></li>
   </ul>
 </body>
 </html>
