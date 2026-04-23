@@ -5,12 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
   <link rel="stylesheet" href="./normal.css">
   <title>ものおきば</title>
+  <style>
+    /* 画像とリストのレイアウト設定 */
+    ul {
+      list-style: none; /* 点を消す */
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 30px; /* 画像ごとの上下の間隔 */
+      display: flex;
+      flex-direction: column; /* 番号と画像を縦に並べる */
+      align-items: flex-start; /* 左寄せ */
+    }
+
+    /* 画像のサイズ調整（ここを変えると一括で変わります） */
+    .thumb {
+      display: block;
+      margin-top: 8px;
+      width: 120px;      /* 横幅（小さめ） */
+      height: auto;      /* 縦横比を維持 */
+      border: 1px solid #ddd;
+      border-radius: 4px; /* 角を少し丸く（お好みで） */
+    }
+  </style>
 </head>
 <body>
-  <h3> </h3>
+  <h3>ものおきば</h3>
+  <p>最終更新：2025/5/31 22:45</p>
   <ul>
-    <li><a href="1.jpg">1</a></li>
-    <li><a href="2.jpg">2</a></li>  
+    <li><a href="22.jpg">赤羽</a><img src="22.jpg" class="thumb"></li>
+    <li><a href="7.jpg">上尾</a><img src="7.jpg" class="thumb"></li>
   </ul>
 </body>
 </html>
