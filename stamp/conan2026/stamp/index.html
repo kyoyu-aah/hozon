@@ -7,55 +7,58 @@
   <meta name="robots" content="noindex, nofollow">
   <title>ものおきば</title>
   <style>
-    /* 画像とリストのレイアウト設定 */
+    /* 全体：横並びにして端で折り返す設定 */
     ul {
-      list-style: none; /* 点を消す */
+      list-style: none;
       padding: 0;
-      display: flex;    /* 横並びにする */
-      flex-wrap: wrap;  /* 端まで来たら折り返す */
-      gap: 20px;       /* 項目間の余白 */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
+    /* 各アイテム：文字と画像を縦に並べて中央揃え */
     li {
-      margin-bottom: 15px; 
       display: flex;
-      flex-direction: column; /* 文字と画像を縦に並べる */
-      align-items: center;    /* 中央揃え */
-      width: 130px;           /* 各項目の幅を固定 */
+      flex-direction: column;
+      align-items: center;
+      width: 150px;
+      margin-bottom: 15px;
     }
 
     /* 画像のサイズ調整 */
-    .thumb {
+    .thumbnail {
       display: block;
       margin-top: 8px;
-      width: 100%;       /* 親要素の幅に合わせる */
-      max-width: 120px;  /* 最大幅を指定 */
-      height: auto;      /* 縦横比を維持 */
-      border: 1px solid #ddd;
-      border-radius: 4px; /* 角を少し丸く */
+      width: 100%;
+      max-width: 140px;
+      height: auto;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9; /* 読み込み前の下地 */
     }
 
-    /* リンクテキストの調整 */
+    /* リンクテキスト：高さのズレを防ぎ、中央に配置 */
     li a {
       text-align: center;
       font-size: 14px;
       text-decoration: none;
-      min-height: 2.5em; /* 高さを揃えて画像の開始位置を統一 */
+      word-break: break-all;
+      min-height: 3em;
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
 <body>
   <h3>スタンプ</h3>
   <ul>
-    <li><a href="2.jpg">千葉</a><img src="2.jpg" class="thumb"></li>
-    <li><a href="1.jpg">船橋</a><img src="1.jpg" class="thumb"></li>
-    <li><a href="3.jpg">大宮</a><img src="3.jpg" class="thumb"></li>
-    <li><a href="4.jpg">浦和</a><img src="4.jpg" class="thumb"></li>
-    <li><a href="5.jpg">赤羽</a><img src="5.jpg" class="thumb"></li>
-    <li><a href="6.jpg">羽田空港第2ターミナル</a><img src="6.jpg" class="thumb"></li>
-    <li><a href="7.jpg">北千住</a><img src="7.jpg" class="thumb"></li>    
+    <li><a href="2.jpg">千葉</a><img src="2.jpg" class="thumbnail"></li>
+    <li><a href="1.jpg">船橋</a><img src="1.jpg" class="thumbnail"></li>
+    <li><a href="3.jpg">大宮</a><img src="3.jpg" class="thumbnail"></li>
+    <li><a href="4.jpg">浦和</a><img src="4.jpg" class="thumbnail"></li>
+    <li><a href="5.jpg">赤羽</a><img src="5.jpg" class="thumbnail"></li>
+    <li><a href="6.jpg">羽田空港第2ターミナル</a><img src="6.jpg" class="thumbnail"></li>
+    <li><a href="7.jpg">北千住</a><img src="7.jpg" class="thumbnail"></li>    
   </ul>
 </body>
 </html>
