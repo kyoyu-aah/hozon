@@ -7,37 +7,45 @@
   <meta name="robots" content="noindex, nofollow">
   <title>ものおきば</title>
   <style>
-    /* リスト全体を横並びにする設定 */
+    /* 全体：横並びにして端で折り返す設定 */
     ul {
       list-style: none;
       padding: 0;
-      display: flex;       /* 横並びにする */
-      flex-wrap: wrap;    /* 端まで来たら折り返す */
-      gap: 20px;          /* 画像ごとの隙間 */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
+    /* 各アイテム：文字と画像を縦に並べて中央揃え */
     li {
       display: flex;
-      flex-direction: column; /* リンク（文字）と画像を縦に並べる */
-      align-items: center;    /* 中央揃え（お好みで） */
-      width: 150px;           /* 各項目の幅を固定 */
+      flex-direction: column;
+      align-items: center;
+      width: 150px;
+      margin-bottom: 15px;
     }
 
+    /* 画像のサイズ調整 */
     .thumbnail {
       display: block;
-      margin-top: 5px;
-      width: 100%;       /* 親要素(li)の幅に合わせる */
+      margin-top: 8px;
+      width: 100%;
+      max-width: 140px;
       height: auto;
       border: 1px solid #ccc;
+      background-color: #f9f9f9; /* 読み込み前の下地 */
     }
 
-    /* 文字が長い場合に備えての調整 */
+    /* リンクテキスト：高さのズレを防ぎ、中央に配置 */
     li a {
       text-align: center;
-      font-size: 0.9em;
-      word-break: break-all; /* 長い駅名でも崩れないように */
+      font-size: 14px;
       text-decoration: none;
-      color: #0000EE;
+      word-break: break-all;
+      min-height: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
