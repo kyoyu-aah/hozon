@@ -1,5 +1,5 @@
 /* ------------------------------
-   全体の基本設定
+   全体の基本設定（左揃え）
 ------------------------------ */
 body {
   margin: 0;
@@ -8,13 +8,7 @@ body {
   background: #f5f6fa;
   color: #333;
   line-height: 1.8;
-}
-
-/* 中央寄せレイアウト */
-body > * {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left; /* ← 左揃えを明示 */
 }
 
 /* ------------------------------
@@ -37,7 +31,38 @@ h4 {
 }
 
 /* ------------------------------
-   リンクリスト
+   情報テキスト（最終更新・テスト用）
+------------------------------ */
+p {
+  margin: 6px 0 12px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* 最初の2つの p を情報カード風に */
+p:nth-of-type(1),
+p:nth-of-type(2) {
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* アイコンを付けて視認性アップ */
+p:nth-of-type(1)::before {
+  content: "📅 ";
+  font-size: 1rem;
+}
+
+p:nth-of-type(2)::before {
+  content: "🧪 ";
+  font-size: 1rem;
+}
+
+/* ------------------------------
+   リンクリスト（カード型を維持）
 ------------------------------ */
 ul {
   list-style: none;
@@ -75,9 +100,10 @@ hr {
 }
 
 /* ------------------------------
-   注意書き
+   注意書き（左揃えのまま強調）
 ------------------------------ */
-.notice-box {
+.notice-box,
+.notice {
   padding: 18px 20px;
   background: #fff;
   border-left: 5px solid #e84118;
@@ -86,7 +112,8 @@ hr {
   margin-top: 20px;
 }
 
-/* HTML側の <p> やテキストを自然に整える */
-p {
-  margin: 6px 0 12px;
+.notice-box p,
+.notice p {
+  margin: 0;
+  color: #444;
 }
