@@ -1,0 +1,92 @@
+/* ------------------------------
+   全体の基本設定
+------------------------------ */
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+  background: #f5f6fa;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* 中央寄せレイアウト */
+body > * {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------------------------
+   見出し
+------------------------------ */
+h3 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+  color: #222;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  border-left: 4px solid #4b7bec;
+  padding-left: 10px;
+  color: #222;
+}
+
+/* ------------------------------
+   リンクリスト
+------------------------------ */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #4b7bec;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: 0.15s ease;
+}
+
+ul li a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* ------------------------------
+   区切り線
+------------------------------ */
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* ------------------------------
+   注意書き
+------------------------------ */
+.notice-box {
+  padding: 18px 20px;
+  background: #fff;
+  border-left: 5px solid #e84118;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+/* HTML側の <p> やテキストを自然に整える */
+p {
+  margin: 6px 0 12px;
+}
