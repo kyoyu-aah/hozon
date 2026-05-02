@@ -1,5 +1,5 @@
 /* ------------------------------
-   全体の基本設定（左揃え）
+   全体
 ------------------------------ */
 body {
   margin: 0;
@@ -8,11 +8,11 @@ body {
   background: #f5f6fa;
   color: #333;
   line-height: 1.8;
-  text-align: left; /* ← 左揃えを明示 */
+  text-align: left;
 }
 
 /* ------------------------------
-   見出し
+   見出し（そのまま強調）
 ------------------------------ */
 h3 {
   font-size: 2rem;
@@ -31,38 +31,25 @@ h4 {
 }
 
 /* ------------------------------
-   情報テキスト（最終更新・テスト用）
+   「最終更新」「テスト用」「注意文の本文」
+   → すべて普通の黒文字に統一
 ------------------------------ */
 p {
   margin: 6px 0 12px;
   font-size: 0.95rem;
-  color: #555;
+  color: #444; /* 普通の黒文字 */
 }
 
-/* 最初の2つの p を情報カード風に */
-p:nth-of-type(1),
-p:nth-of-type(2) {
-  background: #ffffff;
-  padding: 10px 14px;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-/* アイコンを付けて視認性アップ */
-p:nth-of-type(1)::before {
-  content: "📅 ";
-  font-size: 1rem;
-}
-
-p:nth-of-type(2)::before {
-  content: "🧪 ";
-  font-size: 1rem;
+/* 注意文の本文（h4 の直後のテキスト） */
+h4 + div,
+h4 + p {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #444;
 }
 
 /* ------------------------------
-   リンクリスト（カード型を維持）
+   リンク（スタンプ）はカード型のまま維持
 ------------------------------ */
 ul {
   list-style: none;
@@ -97,23 +84,4 @@ hr {
   margin: 40px 0;
   border: none;
   border-top: 1px solid #ddd;
-}
-
-/* ------------------------------
-   注意書き（左揃えのまま強調）
------------------------------- */
-.notice-box,
-.notice {
-  padding: 18px 20px;
-  background: #fff;
-  border-left: 5px solid #e84118;
-  border-radius: 6px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-  margin-top: 20px;
-}
-
-.notice-box p,
-.notice p {
-  margin: 0;
-  color: #444;
 }
